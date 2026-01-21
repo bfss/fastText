@@ -6,6 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#endif
+
 #include <args.h>
 #include <autotune.h>
 #include <densematrix.h>
